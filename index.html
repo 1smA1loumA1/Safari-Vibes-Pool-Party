@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safari Vibes Pool Party – Ticket Reservation</title>
+    <link rel="icon" href="image/ICON.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Safari Vibes Pool Party</h1>
+      <h2 class="subtitle">Eid-Al-Fitr Day | 18:00 - Midnight</h2>
+    </header>
+     <section class="hero">
+      <img src="image/party.jpg" alt="Pool Party" />
+    </section>
+
+    <section class="ticket-info">
+      <div class="info-card">
+        <h2>Ticket Prices</h2>
+        <p><strong>Standard Ticket:</strong> 170 MAD</p>
+        <p><strong>Ticket + Transport:</strong> 220 MAD</p>
+        <p>Mojito included 🍹 | Snacks & Drinks available</p>
+      </div>
+    </section>
+
+    <section class="reservation">
+      <h2>Reserve Your Ticket</h2>
+      <form id="ticketForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label>Ticket Type</label>
+          <select id="ticketType">
+            <option value="170 MAD - Standard">170 MAD - Standard</option>
+            <option value="220 MAD - Ticket + Transport">220 MAD - Ticket + Transport</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Number of Tickets</label>
+          <input type="number" id="quantity" min="1" value="1" required />
+        </div>
+
+        <button type="submit" class="btn">Reserve via WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="rules">
+      <h2>Party Rules</h2>
+      <ul>
+        <li>No drugs are allowed inside the event.</li>
+        <li>Minors are not allowed to enter.</li>
+        <li>Security staff have the right to search attendees.</li>
+        <li>Security may search female attendees if necessary.</li>
+        <li>Any aggressive behavior or fighting is strictly prohibited.</li>
+        <li>We are not responsible for lost personal belongings.</li>
+        <li>Please respect the vibe and keep a positive attitude.</li>
+      </ul>
+      <p class="thanks">Thank you for your cooperation 💛</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
